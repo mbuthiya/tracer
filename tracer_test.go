@@ -15,7 +15,7 @@ func TestNew(t *testing.T){
 	}else{
 		tracer.Trace("Hello Trace package")
 		if buf.String() != "Hello Trace package\n"{
-			t.Errorf("Tracer should write '&s'.",buf.String())
+			t.Errorf("Tracer should write '%s'.",buf.String())
 		}
 	}
 }
